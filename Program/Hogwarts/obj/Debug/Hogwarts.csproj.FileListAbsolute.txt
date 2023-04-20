@@ -1,0 +1,11 @@
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\bin\Debug\Hogwarts.exe.config
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\bin\Debug\Hogwarts.exe
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\bin\Debug\Hogwarts.pdb
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.csproj.AssemblyReference.cache
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.csproj.SuggestedBindingRedirects.cache
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.Properties.Resources.resources
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.csproj.GenerateResource.cache
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.csproj.CoreCompileInputs.cache
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.exe
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.pdb
+C:\Users\bardi\OneDrive\Desktop\Hogwarts project\mini_project2_hogwarts-Gangster-Cat\Program\Hogwarts\obj\Debug\Hogwarts.Form1.resources
