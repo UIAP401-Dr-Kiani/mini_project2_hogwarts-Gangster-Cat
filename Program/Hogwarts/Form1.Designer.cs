@@ -36,6 +36,7 @@
             // 
             // IntroTimer
             // 
+            this.IntroTimer.Enabled = true;
             this.IntroTimer.Interval = 10D;
             this.IntroTimer.SynchronizingObject = this;
             this.IntroTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
