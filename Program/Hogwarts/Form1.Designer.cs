@@ -30,7 +30,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.IntroTimer = new System.Timers.Timer();
+            ((System.ComponentModel.ISupportInitialize)(this.IntroTimer)).BeginInit();
             this.SuspendLayout();
+            // 
+            // IntroTimer
+            // 
+            this.IntroTimer.Interval = 10D;
+            this.IntroTimer.SynchronizingObject = this;
+            this.IntroTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
             // 
             // Form1
             // 
@@ -46,11 +54,15 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form1";
+            this.Opacity = 0D;
             this.Text = "Hogwarts";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
+            ((System.ComponentModel.ISupportInitialize)(this.IntroTimer)).EndInit();
             this.ResumeLayout(false);
         }
+
+        public System.Timers.Timer IntroTimer;
 
         #endregion
     }
