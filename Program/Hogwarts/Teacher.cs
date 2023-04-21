@@ -2,12 +2,13 @@
 
 namespace Hogwarts
 {
-    public class Student : AllowedPerson, ITimeTableConflicts
+    public class Teacher : AllowedPerson, ITimeTableConflicts
     {
         //------------------------------------------------------------------------------------------------
         //----Here when students or teachers want to choose some lessons for studying or teaching -->    |
         //----this function first will be run to check if the time table of lessons have conflicts or not|
         //------------------------------------------------------------------------------------------------
+
         public List<ConflictLesson> TimeTableConflicts(List<Lesson> lessons)
         {
             List<ConflictLesson> LessonConflicts = new List<ConflictLesson>();
@@ -20,12 +21,6 @@ namespace Hogwarts
 
             for (int i = 0; i < lessons.Count; i++)
             {
-                if (lessons[i].Capacity == lessons[i].StudentCount)
-                    LessonConflicts.Add(new ConflictLesson(lessons[i].Name, lessons[i].StartTime, lessons[i].EndTime,
-                        lessons[i].StudentCount, lessons[i].Capacity, lessons[i].PresentationTerm,
-                        $"{lessons[i].Name} Is Full!"));
-
-
                 for (int j = 0; j < lessons.Count; j++)
                 {
                     if (lessons[i].StartTime == lessons[j].StartTime && i != j)
@@ -42,9 +37,6 @@ namespace Hogwarts
         }
 
         //------------------------------------------------------------------------------------------------
-        public List<LessonName> PassedLessons { get; set; }
-        public List<Lesson> CurrentTermLessons { get; set; }
-        public int CurrentTerm { get; set; }
-        public int DormitoryCode { get; set; }
+        public bool TeachMultipleLessons { get; set; }
     }
 }

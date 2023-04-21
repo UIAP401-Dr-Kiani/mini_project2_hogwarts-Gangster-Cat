@@ -30,7 +30,7 @@
         Male,Female
     }
 
-    public enum Lesson
+    public enum LessonName
     {
         
     }
