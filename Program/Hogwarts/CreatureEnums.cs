@@ -13,7 +13,7 @@
         HalfBlood,PureBlood,MuggleBlood
     }
 
-    public enum AcceptedGroups
+    public enum Groups
     {
         Hufflepuff,
         Gryffindor,
@@ -28,5 +28,10 @@
     public enum HumanGender{
         
         Male,Female
+    }
+
+    public enum Lesson
+    {
+        
     }
 }

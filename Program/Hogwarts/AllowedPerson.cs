@@ -2,8 +2,9 @@
 {
     public class AllowedPerson : Human
     {
-        AllowedPerson()
+        protected AllowedPerson()
         {
+            //For base class usage only
         }
 
         //Note: This Properties are not implemented yet!
