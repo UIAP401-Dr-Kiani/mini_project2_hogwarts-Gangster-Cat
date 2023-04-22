@@ -49,6 +49,7 @@
         <Compile Include="AllowedPerson.cs" />
         <Compile Include="ConflictLesson.cs" />
         <Compile Include="CreatureEnums.cs" />
+        <Compile Include="Dormitory.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>

@@ -21,18 +21,22 @@ namespace Hogwarts
             for (int i = 0; i < lessons.Count; i++)
             {
                 if (lessons[i].Capacity == lessons[i].StudentCount)
+                {
                     LessonConflicts.Add(new ConflictLesson(lessons[i].Name, lessons[i].StartTime, lessons[i].EndTime,
                         lessons[i].StudentCount, lessons[i].Capacity, lessons[i].PresentationTerm,
                         $"{lessons[i].Name} Is Full!"));
+                }
 
 
                 for (int j = 0; j < lessons.Count; j++)
                 {
                     if (lessons[i].StartTime == lessons[j].StartTime && i != j)
+                    {
                         LessonConflicts.Add(new ConflictLesson(lessons[j].Name, lessons[j].StartTime,
                             lessons[j].EndTime, lessons[j].StudentCount, lessons[j].Capacity,
                             lessons[i].PresentationTerm,
                             $"{lessons[i].Name} Section Has Conflict With {lessons[j].Name}!"));
+                    }
                 }
             }
 
