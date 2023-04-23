@@ -50,21 +50,16 @@ namespace Hogwarts
             //Generates all plants with randomized counts
 
             Random rCount = new Random();
-            List<Plant> rPlants = new List<Plant>()
+            List<Plant> rPlants = new List<Plant>();
+
+            foreach (PlantName plantName in Enum.GetValues(typeof(PlantName)))
             {
-                new Plant(PlantName.Dittany, rCount.Next(1, 101)),
-                new Plant(PlantName.Shrivelfigs, rCount.Next(1, 101)),
-                new Plant(PlantName.Mandrakes, rCount.Next(1, 101)),
-                new Plant(PlantName.Fluxweed, rCount.Next(1, 101)),
-                new Plant(PlantName.Knotgrass, rCount.Next(1, 101)),
-                new Plant(PlantName.Mallowsweet, rCount.Next(1, 101)),
-                new Plant(PlantName.VenomousTentacula, rCount.Next(1, 101)),
-                new Plant(PlantName.ChineseChompingCabbage, rCount.Next(1, 101))
-            };
+                rPlants.Add(new Plant(plantName, rCount.Next(1, 101)));
+            }
             //------------------------------------------------------------------
 
             //Here this method Generates randomized plants randomly for all terms
-            
+
             Random rindex = new Random();
             int generationPlace = 1;
 
@@ -73,7 +68,7 @@ namespace Hogwarts
                 int randIndex = rindex.Next(0, rPlants.Count);
                 AddTermXPlants(generationPlace, rPlants[randIndex]);
                 rPlants.Remove(rPlants[randIndex]);
-                
+
                 if (generationPlace != 4)
                     generationPlace++;
                 else

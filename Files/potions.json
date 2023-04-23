@@ -1,0 +1,752 @@
+[
+  {
+    "Id": 1,
+    "Name": "Ageing Potion",
+    "Description": "A potion that, depending on the amount taken, ages the drinker to various ages."
+  },
+  {
+    "Id": 2,
+    "Name": "Alihotsy Draught",
+    "Description": "A potion from the Alihotsy plant; causes hysterical laughter."
+  },
+  {
+    "Id": 3,
+    "Name": "Amortentia",
+    "Description": "The world's strongest Love Potion; does not create real love, just powerful obsession."
+  },
+  {
+    "Id": 4,
+    "Name": "Angel's Trumpet Draught",
+    "Description": "Effects and usage of this potion are unknown."
+  },
+  {
+    "Id": 5,
+    "Name": "Anti-Paralysis Potion",
+    "Description": "A potion that heals paralysis."
+  },
+  {
+    "Id": 6,
+    "Name": "Antidote to Common Poisons",
+    "Description": "A potion that reverses the effects of common poisons. Contains Bezoar, Mistletoe Berries, and Unicorn Horns."
+  },
+  {
+    "Id": 7,
+    "Name": "Antidote to Uncommon Poisons",
+    "Description": "A potion that reverses the effects of uncommon poisons."
+  },
+  {
+    "Id": 8,
+    "Name": "Antidote to Veritaserum",
+    "Description": "A potion that removes the effects of Veritaserum."
+  },
+  {
+    "Id": 9,
+    "Name": "Armadillo Bile Mixture",
+    "Description": "Unknown"
+  },
+  {
+    "Id": 10,
+    "Name": "Babbling Beverage",
+    "Description": "A potion that causes uncontrollable speaking of nonsense."
+  },
+  {
+    "Id": 11,
+    "Name": "Baneberry Potion",
+    "Description": "A poisonous brew of unknown exact effect."
+  },
+  {
+    "Id": 12,
+    "Name": "Baruffio's Brain Elixir",
+    "Description": "A potion that apparently increases the taker's brain power."
+  },
+  {
+    "Id": 13,
+    "Name": "Beautification Potion",
+    "Description": "A potion that makes the taker very beautiful."
+  },
+  {
+    "Id": 14,
+    "Name": "Befuddlement Draught",
+    "Description": "A potion that makes the taker confused and reckless."
+  },
+  {
+    "Id": 15,
+    "Name": "Beguiling Bubbles",
+    "Description": "A Love Potion sold at Weasleys' Wizard Wheezes."
+  },
+  {
+    "Id": 16,
+    "Name": "Black Fire Potion",
+    "Description": "A potion that makes the taker able to move through black fire uninjured."
+  },
+  {
+    "Id": 17,
+    "Name": "Blemish Blitzer",
+    "Description": "A potion that most likely gets rid of acne."
+  },
+  {
+    "Id": 18,
+    "Name": "Blood-Replenishing Potion",
+    "Description": "A potion that replenishes the taker's blood if they have been injured and lost blood."
+  },
+  {
+    "Id": 19,
+    "Name": "Bloodroot Poison",
+    "Description": "A poisonous potion."
+  },
+  {
+    "Id": 20,
+    "Name": "Bruise removal paste",
+    "Description": "A paste invented by Fred and George Weasley to remove bruises."
+  },
+  {
+    "Id": 21,
+    "Name": "Bulgeye Potion",
+    "Description": "Presumed to make the taker's eyes swell."
+  },
+  {
+    "Id": 22,
+    "Name": "Bundimun Pomade",
+    "Description": "A potion that is presumably a hair pomade containing Bundimun secretion."
+  },
+  {
+    "Id": 23,
+    "Name": "Bundimun Secretion",
+    "Description": "A magical substance that, when diluted, is known to be used in some magical cleaning products."
+  },
+  {
+    "Id": 24,
+    "Name": "Burn-Healing Paste",
+    "Description": "A thick paste used to heal burns."
+  },
+  {
+    "Id": 25,
+    "Name": "Burning Bitterroot Balm",
+    "Description": "Presumably a soothing balsam made from the Bitterroot plant."
+  },
+  {
+    "Id": 26,
+    "Name": "Calming Draught",
+    "Description": "A potion that calms the user of shock, trauma, etc."
+  },
+  {
+    "Id": 27,
+    "Name": "Caxambu Style Borborygmus Potion",
+    "Description": "Provokes stomach growling"
+  },
+  {
+    "Id": 28,
+    "Name": "Cheese-Based Potions",
+    "Description": "Potions whose main ingredients are cheese."
+  },
+  {
+    "Id": 29,
+    "Name": "Chelidonium Miniscula",
+    "Description": "The effects of this potion are unknown."
+  },
+  {
+    "Id": 30,
+    "Name": "Confusing Concoction",
+    "Description": "A potion that confuses the taker."
+  },
+  {
+    "Id": 31,
+    "Name": "Cough Potion",
+    "Description": "A potion that soothes and reduces coughs."
+  },
+  {
+    "Id": 32,
+    "Name": "Cupid Crystals",
+    "Description": "A Love Potion sold at Weasleys' Wizard Wheezes."
+  },
+  {
+    "Id": 33,
+    "Name": "Cure for Boils",
+    "Description": "A potion that cures boils. Seen/Mentioned: Taught to first years in Potions class."
+  },
+  {
+    "Id": 34,
+    "Name": "Dawdle Draught",
+    "Description": "Helps the drinker deal with traces."
+  },
+  {
+    "Id": 35,
+    "Name": "Death potion",
+    "Description": "Kills those who come into contact with it"
+  },
+  {
+    "Id": 36,
+    "Name": "Death-Cap Draught",
+    "Description": "Effects of this potion are unknown, but it is possibly a poison."
+  },
+  {
+    "Id": 37,
+    "Name": "Deflating Draught",
+    "Description": "A potion that deflates anything swollen by magical means."
+  },
+  {
+    "Id": 38,
+    "Name": "Developing Solution",
+    "Description": "A potion used in the developing of magical photographs, making them move."
+  },
+  {
+    "Id": 39,
+    "Name": "Dizziness Draught",
+    "Description": "A potion that makes the taker dizzy and lightheaded."
+  },
+  {
+    "Id": 40,
+    "Name": "Dogbane Potion",
+    "Description": "The effects of this potion are unknown, but it is possibly poisonous to dogs."
+  },
+  {
+    "Id": 41,
+    "Name": "Dogbreath Potion",
+    "Description": "Gives the drinker a fiery breath. Has a purple hue"
+  },
+  {
+    "Id": 42,
+    "Name": "Doxycide",
+    "Description": "A solution that kills Doxys"
+  },
+  {
+    "Id": 43,
+    "Name": "Dr Ubbly's Oblivious Unction",
+    "Description": "Heals wounds given by thoughts."
+  },
+  {
+    "Id": 44,
+    "Name": "Dragon Poison",
+    "Description": "A poisonous potion most likely taken from dragons."
+  },
+  {
+    "Id": 45,
+    "Name": "Dragon Tonic",
+    "Description": "A tonic used to heal sickly dragons."
+  },
+  {
+    "Id": 46,
+    "Name": "Dragon dung fertiliser",
+    "Description": "A solution that helps plants grow."
+  },
+  {
+    "Id": 47,
+    "Name": "Draught of Living Death",
+    "Description": "A potion that places the taker in a state of sleep that makes them seem like they are dead. Seen/Mentioned: Severus Snape asked a question related to this potion to Harry in 1991; Horace Slughorn showed it to 6th years in 1996."
+  },
+  {
+    "Id": 48,
+    "Name": "Draught of Peace",
+    "Description": "A potion that relieves anxiety."
+  },
+  {
+    "Id": 49,
+    "Name": "Dreamless Sleep Potion",
+    "Description": "A potion that places the taker in a sleep that is dreamless."
+  },
+  {
+    "Id": 50,
+    "Name": "Drink of Despair",
+    "Description": "A potion that puts the taker in extreme pain."
+  },
+  {
+    "Id": 51,
+    "Name": "Drowsiness Draught",
+    "Description": "Makes drinker drowsy"
+  },
+  {
+    "Id": 52,
+    "Name": "Elixir of Life",
+    "Description": "A potion created from the Philosopher's Stone that extend the taker's life. Seen/Mentioned: Hermione Granger told Harry and Ron about this in 1991. Nicolas Flamel and his wife are known to be using it and they lived upto more that 600 years."
+  },
+  {
+    "Id": 53,
+    "Name": "Elixir to Induce Euphoria",
+    "Description": "A potion that induces a sense of inexplicable, irrational happiness upon the drinker."
+  },
+  {
+    "Id": 54,
+    "Name": "Erumpent Potion",
+    "Description": "A potion that is highly explosive when it touches or is touched by an outside source."
+  },
+  {
+    "Id": 55,
+    "Name": "Everklena",
+    "Description": "A supposed cleaning product that in reality caused grime to spawn."
+  },
+  {
+    "Id": 56,
+    "Name": "Essence of Insanity",
+    "Description": "A potion which presumably causes irrational behaviour, possibly inflicting the condition of insanity. Seen/Mentioned: Ronald Weasley and Hermione Granger thought Harry had accidentally consumed it, due to his strange behaviour after consuming the Felix Felicis."
+  },
+  {
+    "Id": 57,
+    "Name": "Everlasting Elixirs",
+    "Description": "A potion with the effect to either never run out of potion or to work forever."
+  },
+  {
+    "Id": 58,
+    "Name": "Exploding Potion",
+    "Description": "A very volatile potion, and when completed, can be used to create explosions."
+  },
+  {
+    "Id": 59,
+    "Name": "Exstimulo Potion",
+    "Description": "Boosts the spell power of the drinker."
+  },
+  {
+    "Id": 60,
+    "Name": "Fake Protective Potions",
+    "Description": "A potion that claimed to protect the taker from Dark magic, but did not."
+  },
+  {
+    "Id": 61,
+    "Name": "Fatiguing Infusion",
+    "Description": "A potion that, when either drank or inhaled, caused fatigue."
+  },
+  {
+    "Id": 62,
+    "Name": "Felix Felicis (Also known as Liquid Luck)",
+    "Description": "A magical potion that makes the taker successful in all their endeavours."
+  },
+  {
+    "Id": 63,
+    "Name": "Fergus Fungal Budge",
+    "Description": "A fungicidal product that treated ringworm infections on the feet."
+  },
+  {
+    "Id": 64,
+    "Name": "Fire Protection Potion",
+    "Description": "A potion that protects the taker from being burnt."
+  },
+  {
+    "Id": 65,
+    "Name": "Flesh-Eating Slug Repellent",
+    "Description": "A pesticide that repels flesh-eating slugs."
+  },
+  {
+    "Id": 66,
+    "Name": "Forgetfulness Potion",
+    "Description": "A potion that makes the taker forgetful."
+  },
+  {
+    "Id": 67,
+    "Name": "Frog Parts Mixture",
+    "Description": "A packet of potion ingredients that most likely contained frog parts."
+  },
+  {
+    "Id": 68,
+    "Name": "Fungiface Potion",
+    "Description": "A potion that makes the taker's face break out in fungi."
+  },
+  {
+    "Id": 69,
+    "Name": "Garrotting Gas",
+    "Description": "A gas that induces choking and possibly suffocates the taker."
+  },
+  {
+    "Id": 70,
+    "Name": "Girding Potion",
+    "Description": "A potion that gives the taker extra endurance."
+  },
+  {
+    "Id": 71,
+    "Name": "Grand Pepperup Potion",
+    "Description": "A stronger version of Pepperup Potion."
+  },
+  {
+    "Id": 72,
+    "Name": "Grand Wiggenweld Potion",
+    "Description": "Most likely a stronger version of Wiggenweld Potion."
+  },
+  {
+    "Id": 73,
+    "Name": "Gregory's Unctuous Unction",
+    "Description": "A potion that causes the drinker to believe that whomever gave the potion to them is their best friend."
+  },
+  {
+    "Id": 74,
+    "Name": "Hair-Raising Potion",
+    "Description": "A potion that causes the taker's hair to stand on end."
+  },
+  {
+    "Id": 75,
+    "Name": "Hate Potion",
+    "Description": "A potion that shows the taker's worst traits and habits."
+  },
+  {
+    "Id": 76,
+    "Name": "Heartbreak Teardrops",
+    "Description": "A potion sold by Fred and George Weasley at Weasleys' Wizard Wheezes."
+  },
+  {
+    "Id": 77,
+    "Name": "Herbicide Potion",
+    "Description": "A potion that either kills or damages plants. Contains Flobberworm mucus, Horclump juice, and Spines of lionfish. Seen/Mentioned: Magical Drafts and Potions  by Arsenius Jiggles."
+  },
+  {
+    "Id": 78,
+    "Name": "Hiccoughing Solution",
+    "Description": "A potion that most likely cures hiccups."
+  },
+  {
+    "Id": 79,
+    "Name": "Invigoration Draught",
+    "Description": "A potion that is presumed to give the taker an energy boost."
+  },
+  {
+    "Id": 80,
+    "Name": "Invisibility Potion",
+    "Description": "A potion that makes the taker invisible."
+  },
+  {
+    "Id": 81,
+    "Name": "Jawbind Potion",
+    "Description": "A potion that induces lockjaw"
+  },
+  {
+    "Id": 82,
+    "Name": "Kissing Concoction",
+    "Description": "A potion created by Fred and George Weasley sold at Weasleys' Wizard Wheezes."
+  },
+  {
+    "Id": 83,
+    "Name": "Laugh-inducing Potion",
+    "Description": "A potion that makes the taker laugh uncontrollably."
+  },
+  {
+    "Id": 84,
+    "Name": "Laxative Potion",
+    "Description": "A potion that is most likely a laxative."
+  },
+  {
+    "Id": 85,
+    "Name": "Love Potion",
+    "Description": "Any of a large number of potions that make the taker fall in love with the person that has given it to them."
+  },
+  {
+    "Id": 86,
+    "Name": "Love Potion Antidote",
+    "Description": "Antidote to love potions."
+  },
+  {
+    "Id": 87,
+    "Name": "Lung Clearing Potion",
+    "Description": "A potion whose effects are unknown; most likely cures the taker of lung infections."
+  },
+  {
+    "Id": 88,
+    "Name": "Magi-Me-More",
+    "Description": "Magical pills that allegedly allow the regaining power and concentration that some elderly wizards lose over the years."
+  },
+  {
+    "Id": 89,
+    "Name": "Madame Glossy's Silver Polish",
+    "Description": "A magical cleaning solution."
+  },
+  {
+    "Id": 90,
+    "Name": "Malevolent Mixture",
+    "Description": "A potion that is most likely a poison or produces other bad effects."
+  },
+  {
+    "Id": 91,
+    "Name": "Mandrake Restorative Draught",
+    "Description": "A potion made from Mandrakes that restores a person that has been petrified to their original state."
+  },
+  {
+    "Id": 92,
+    "Name": "Manegro Potion",
+    "Description": "Causes hair on drinker's head to grow out rapidly"
+  },
+  {
+    "Id": 93,
+    "Name": "Maximum Turbo Farts Potion",
+    "Description": "resumably causes the drinker to rapidly develop flatulence"
+  },
+  {
+    "Id": 94,
+    "Name": "Memory Potion",
+    "Description": "Enhances the drinker's memory"
+  },
+  {
+    "Id": 95,
+    "Name": "Moonseed Poison",
+    "Description": "A poison made with moonseed"
+  },
+  {
+    "Id": 96,
+    "Name": "Mopsus Potion",
+    "Description": "presumably gives one Seer-like power possibly the ability to manipulate objects telekinetically."
+  },
+  {
+    "Id": 97,
+    "Name": "Mouth Itching Antidote",
+    "Description": "Cures Mouth Itching (possibly)"
+  },
+  {
+    "Id": 98,
+    "Name": "Muffling Draught",
+    "Description": "A potion most likely used to silence people and/or various objects"
+  },
+  {
+    "Id": 99,
+    "Name": "Mrs Scower's All-Purpose Magical Mess Remover",
+    "Description": "Removes stains"
+  },
+  {
+    "Id": 100,
+    "Name": "Murtlap Essence",
+    "Description": "Soothes and heals painful cuts and abrasions"
+  },
+  {
+    "Id": 101,
+    "Name": "Noxious Potion",
+    "Description": "Releases green clouds of smoke when completed. Exact effects are unknown, but it is possibly used as a poison."
+  },
+  {
+    "Id": 102,
+    "Name": "Oculus Potion",
+    "Description": "Restores the drinker's sight Counteracts the Conjunctivitis Curse"
+  },
+  {
+    "Id": 103,
+    "Name": "Pepperup Potion",
+    "Description": "Relieves and/or cures cold symptoms. Seen/Mentioned: Madam Pomfrey uses it on students in 1992."
+  },
+  {
+    "Id": 104,
+    "Name": "Poison Antidote",
+    "Description": ""
+  },
+  {
+    "Id": 105,
+    "Name": "Polyjuice Potion",
+    "Description": "Temporarily transforms the drinker into another person. The drinker will take on the appearance of the person whose hair, fingernails, etc., are added to the potion. Not to be used for transforming into an animal. Seen/Mentioned: In 1992 used by Harry and Ron to enter Slytherin common Room; Severus Snape thought Harry was stealing his ingredients to make a polyjuice potion; Used multiple times in 1997 and 1998."
+  },
+  {
+    "Id": 106,
+    "Name": "Pompion Potion",
+    "Description": "Temporarily turns the drinker's head into a pumpkin"
+  },
+  {
+    "Id": 107,
+    "Name": "Potion N. 220",
+    "Description": ""
+  },
+  {
+    "Id": 108,
+    "Name": "Potion No. 07",
+    "Description": "Experimental mix Poisonous"
+  },
+  {
+    "Id": 109,
+    "Name": "Potion No. 113",
+    "Description": "Most likely an experimental mix"
+  },
+  {
+    "Id": 110,
+    "Name": "Potion No. 86",
+    "Description": "Highly poisonous"
+  },
+  {
+    "Id": 111,
+    "Name": "Potion No. 329",
+    "Description": ""
+  },
+  {
+    "Id": 112,
+    "Name": "Quodpot solution",
+    "Description": "Prevents the Quod from exploding."
+  },
+  {
+    "Id": 113,
+    "Name": "Rano Potion",
+    "Description": ""
+  },
+  {
+    "Id": 114,
+    "Name": "Rat Spleen Mixture",
+    "Description": ""
+  },
+  {
+    "Id": 115,
+    "Name": "Rat tonic",
+    "Description": "Healing potion for rats."
+  },
+  {
+    "Id": 116,
+    "Name": "Regeneration Potion",
+    "Description": "Helps restore non-corporeal wizards to their bodies."
+  },
+  {
+    "Id": 117,
+    "Name": "Regerminating Potion",
+    "Description": "Forces the germination of a plant"
+  },
+  {
+    "Id": 118,
+    "Name": "Replenishing Potion",
+    "Description": "A potion used to replenish"
+  },
+  {
+    "Id": 119,
+    "Name": "Restoration Potion",
+    "Description": "Reverts spell effects."
+  },
+  {
+    "Id": 120,
+    "Name": "Revive Potion",
+    "Description": "Awakens an unconscious person"
+  },
+  {
+    "Id": 121,
+    "Name": "Rudimentary Body Potion",
+    "Description": "Helps restore non-corporeal wizards to a rudimentary bodies/sustains rudimentary bodies"
+  },
+  {
+    "Id": 122,
+    "Name": "Scintillation Solution",
+    "Description": "Unknown effect"
+  },
+  {
+    "Id": 123,
+    "Name": "Screaming Snakes Hair Potion",
+    "Description": "A kind of hair potion, the exact effects of which are unknown"
+  },
+  {
+    "Id": 124,
+    "Name": "Shrinking Solution",
+    "Description": "Causes the drinker to shrink"
+  },
+  {
+    "Id": 125,
+    "Name": "Skele-Gro",
+    "Description": "Regrows missing bones"
+  },
+  {
+    "Id": 126,
+    "Name": "Sleekeazy's Hair Potion",
+    "Description": "Makes hair more manageable"
+  },
+  {
+    "Id": 127,
+    "Name": "Sleeping Draught",
+    "Description": "Made the drinker quickly fall into a deep but temporary sleep"
+  },
+  {
+    "Id": 128,
+    "Name": "Snuffling Potion",
+    "Description": "Causes the drinker to sniff (possibly)"
+  },
+  {
+    "Id": 129,
+    "Name": "Solution 078",
+    "Description": ""
+  },
+  {
+    "Id": 130,
+    "Name": "Solution 125",
+    "Description": ""
+  },
+  {
+    "Id": 131,
+    "Name": "Star Grass Salve",
+    "Description": "Healing potion for soothing injuries"
+  },
+  {
+    "Id": 132,
+    "Name": "Strength Potion",
+    "Description": "Gives drinker increased strength It may be related to the Strengthening Solution]."
+  },
+  {
+    "Id": 133,
+    "Name": "Strengthening Solution",
+    "Description": "Presumably increases the strength of the one who drinks it It may be related to the Strength Potion."
+  },
+  {
+    "Id": 134,
+    "Name": "Strong Exstimulo Potion",
+    "Description": "More powerful version of the Exstimulo Potion, which significantly boosts the spell power of the drinker."
+  },
+  {
+    "Id": 135,
+    "Name": "Strong Invigoration Draught",
+    "Description": "More powerful version of the Invigoration Draught."
+  },
+  {
+    "Id": 136,
+    "Name": "Swelling Solution",
+    "Description": "Causes enlargement on contact"
+  },
+  {
+    "Id": 137,
+    "Name": "Ten-Second Pimple Vanisher",
+    "Description": "Treats acne"
+  },
+  {
+    "Id": 138,
+    "Name": "Thick golden potion",
+    "Description": "Healing, curse quarantining. Was used by Professor Severus Snape in the summer of 1996 to treat the effects that the curse on the Ring Horcrux had on Albus Dumbledore."
+  },
+  {
+    "Id": 139,
+    "Name": "Truth Serum",
+    "Description": "Makes the drinker tell the truth"
+  },
+  {
+    "Id": 140,
+    "Name": "Twilight Moonbeams",
+    "Description": "Causes the drinker to become infatuated with the giver of the potion"
+  },
+  {
+    "Id": 141,
+    "Name": "Venomous Tentacula Juice",
+    "Description": "Acts like a (non-fatal) poison."
+  },
+  {
+    "Id": 142,
+    "Name": "Veritaserum",
+    "Description": "Forces the taker to tell the truth."
+  },
+  {
+    "Id": 143,
+    "Name": "Vitamix Potion",
+    "Description": "Gives energy to the drinker"
+  },
+  {
+    "Id": 144,
+    "Name": "Volubilis Potion",
+    "Description": "Alters the drinker's voice"
+  },
+  {
+    "Id": 145,
+    "Name": "Weakness Potion",
+    "Description": "Weakens the drinker"
+  },
+  {
+    "Id": 146,
+    "Name": "Weedosoros",
+    "Description": "Poison"
+  },
+  {
+    "Id": 147,
+    "Name": "Wideye Potion",
+    "Description": "Prevents the drinker from falling asleep. Also awakens from drugging or concussion."
+  },
+  {
+    "Id": 148,
+    "Name": "Wiggenweld Potion",
+    "Description": "Cures minor damage Awakens a person from magically-induced sleep (and hence can cure Draught of Living Death)."
+  },
+  {
+    "Id": 149,
+    "Name": "Wit-Sharpening Potion",
+    "Description": "Presumably enhances the clarity of thought of the drinker"
+  },
+  {
+    "Id": 150,
+    "Name": "Wolfsbane Potion",
+    "Description": "Eases the symptoms of lycanthropy; prevents werewolves from losing their minds post-transformation."
+  }
+]
