@@ -49,6 +49,8 @@ namespace Hogwarts
         public List<LessonName> PassedLessons { get; set; }
         public List<Lesson> CurrentTermLessons { get; set; }
         public int CurrentTerm { get; set; }
-        public int DormitoryCode { get; set; }
+        
+        //After Student added to a dormitory and AddStudent method in dormitory class called DormitoryCode will be set -->
+        public string DormitoryCode { get; set; }
     }
 }
