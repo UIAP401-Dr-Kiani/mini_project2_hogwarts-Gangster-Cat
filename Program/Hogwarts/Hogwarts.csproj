@@ -63,7 +63,7 @@
         <Compile Include="Group.cs" />
         <Compile Include="Human.cs" />
         <Compile Include="Lesson.cs" />
-        <Compile Include="Phytology.cs" />
+        <Compile Include="Herbology.cs" />
         <Compile Include="Plant.cs" />
         <Compile Include="Potion.cs" />
         <Compile Include="Program.cs" />

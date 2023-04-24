@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Hogwarts
 {
-    public class Phytology : Lesson
+    public class Herbology : Lesson
     {
         public static List<Plant> Term1Plants { get; set; }
         public static List<Plant> Term2Plants { get; set; }

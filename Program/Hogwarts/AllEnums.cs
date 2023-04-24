@@ -55,6 +55,6 @@
 
     public enum LessonName
     {
-        Phytology,Chemistry
+        Herbology ,Chemistry
     }
 }
