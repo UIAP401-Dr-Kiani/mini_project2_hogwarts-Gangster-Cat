@@ -57,4 +57,9 @@
     {
         Herbology ,Chemistry
     }
+
+    public enum SportType
+    {
+        
+    }
 }
