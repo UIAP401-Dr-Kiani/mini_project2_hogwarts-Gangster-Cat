@@ -11,7 +11,7 @@ namespace Hogwarts
         {
             get
             {
-                using (StreamReader reader = new StreamReader("../Files/potions.json"))
+                using (StreamReader reader = new StreamReader("../../../../Files/potions.json"))
                 {
                     string jsonPotions = reader.ReadToEnd();
                     return JsonConvert.DeserializeObject<List<Potion>>(jsonPotions);
