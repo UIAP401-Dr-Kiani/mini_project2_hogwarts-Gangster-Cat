@@ -1,4 +1,6 @@
-﻿namespace Hogwarts
+﻿using System.Collections.Generic;
+
+namespace Hogwarts
 {
     public class AllowedPerson : Human
     {
@@ -11,7 +13,6 @@
         public Group Group { get; set; }
         public Pet Pet { get; set; }
         public bool HasSuitCase { get; set; }
-        public AcceptedPersonRole Role { get; set; }
-        public string[] Mails { get; set; }
+        public List<string> Mails { get; set; }
     }
 }

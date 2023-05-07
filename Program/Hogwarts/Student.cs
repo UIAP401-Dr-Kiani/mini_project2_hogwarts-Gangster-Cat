@@ -4,6 +4,15 @@ namespace Hogwarts
 {
     public class Student : AllowedPerson, ITimeTableConflicts
     {
+        public Student(Human human)
+        {
+            // This constructor is for when we want to make instances of Student class with including properties of another human class instance -->
+            
+            foreach (var property in typeof(Human).GetFields() )
+            {
+                property.SetValue(this,property.GetValue(human));
+            }  
+        }
         //------------------------------------------------------------------------------------------------
         //----Here when students or teachers want to choose some lessons for studying or teaching -->    |
         //----this function first will be run to check if the time table of lessons have conflicts or not|
@@ -21,22 +30,18 @@ namespace Hogwarts
             for (int i = 0; i < lessons.Count; i++)
             {
                 if (lessons[i].Capacity == lessons[i].StudentCount)
-                {
                     LessonConflicts.Add(new ConflictLesson(lessons[i].Name, lessons[i].StartTime, lessons[i].EndTime,
                         lessons[i].StudentCount, lessons[i].Capacity, lessons[i].PresentationTerm,
                         $"{lessons[i].Name} Is Full!"));
-                }
 
 
                 for (int j = 0; j < lessons.Count; j++)
                 {
                     if (lessons[i].StartTime == lessons[j].StartTime && i != j)
-                    {
                         LessonConflicts.Add(new ConflictLesson(lessons[j].Name, lessons[j].StartTime,
                             lessons[j].EndTime, lessons[j].StudentCount, lessons[j].Capacity,
                             lessons[i].PresentationTerm,
                             $"{lessons[i].Name} Section Has Conflict With {lessons[j].Name}!"));
-                    }
                 }
             }
 
@@ -49,8 +54,6 @@ namespace Hogwarts
         public List<LessonName> PassedLessons { get; set; }
         public List<Lesson> CurrentTermLessons { get; set; }
         public int CurrentTerm { get; set; }
-        
-        //After Student added to a dormitory and AddStudent method in dormitory class called DormitoryCode will be set -->
         public string DormitoryCode { get; set; }
     }
 }

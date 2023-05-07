@@ -54,6 +54,7 @@
         <Compile Include="ConflictLesson.cs" />
         <Compile Include="AllEnums.cs" />
         <Compile Include="Dormitory.cs" />
+        <Compile Include="Dumbledore.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
