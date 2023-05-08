@@ -11,27 +11,37 @@ namespace Hogwarts
         //------------------------------------------------------------------------------------------------
         // Admin panel functions -->
 
-        public bool IsAccepted(Human person)
+        private static bool IsAcceptedToHogwarts(Human person)
         {
-            //Right now all Humans are accepted!
-            return true;
+            return person.Breed == HumanBreed.HalfBlood || person.Breed == HumanBreed.PureBlood;
         }
 
-        public void ValidateHumans(List<Student> validStudents, List<Teacher> validTeachers)
+        private static bool IsRegularPerson(Human person) => !IsAcceptedToHogwarts(person);
+
+        public void ValidateHumans(List<Student> validStudents, List<Teacher> validTeachers, List<Human> regularHumans)
         {
-            List<Human> humans;
+            List<Human> validPersons;
             using (StreamReader reader = new StreamReader("../../../../Files/JSON_DATA.json"))
             {
+                List<Human> humans;
                 string humansFileString = reader.ReadToEnd();
                 humans = JsonConvert.DeserializeObject<List<Human>>(humansFileString);
+                validPersons = humans.FindAll(IsAcceptedToHogwarts);
+                regularHumans.AddRange(humans.FindAll(IsRegularPerson));
             }
 
-            foreach (var person in humans)
+            foreach (var person in validPersons)
             {
-                if (person.Role == AcceptedPersonRole.Student)
-                    validStudents.Add(new Student(person));
-                else if (person.Role == AcceptedPersonRole.Teacher)
-                    validTeachers.Add(new Teacher(person));
+                switch (person.Role)
+                {
+                    case AcceptedPersonRole.Student:
+                        validStudents.Add(new Student(person));
+                        break;
+                    case AcceptedPersonRole.Teacher:
+                        validTeachers.Add(new Teacher(person));
+                        break;
+                    default: break;
+                }
             }
         }
 
