@@ -7,12 +7,12 @@ namespace Hogwarts
 {
     public class Dumbledore : AllowedPerson
     {
-        public List<Dormitory> Dormitories = new List<Dormitory>();
+        public static List<Dormitory> Dormitories = new List<Dormitory>();
 
         //------------------------------------------------------------------------------------------------
+        
         // Admin panel functions -->
-
-        private static bool IsAcceptedToHogwarts(Human person)
+            private static bool IsAcceptedToHogwarts(Human person)
         {
             return person.Breed == HumanBreed.HalfBlood || person.Breed == HumanBreed.PureBlood;
         }
