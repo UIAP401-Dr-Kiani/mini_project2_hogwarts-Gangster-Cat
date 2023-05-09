@@ -75,6 +75,7 @@
         <Compile Include="Student.cs" />
         <Compile Include="Teacher.cs" />
         <Compile Include="ITimeTableConflicts.cs" />
+        <Compile Include="TrainTicket.cs" />
         <EmbeddedResource Include="Form1.resx">
           <DependentUpon>Form1.cs</DependentUpon>
         </EmbeddedResource>

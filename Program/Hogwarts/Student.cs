@@ -55,5 +55,6 @@ namespace Hogwarts
         public List<Lesson> CurrentTermLessons { get; set; }
         public int CurrentTerm { get; set; }
         public string DormitoryCode { get; set; }
+        public TrainTicket TrainTicket { get; set; }
     }
 }
