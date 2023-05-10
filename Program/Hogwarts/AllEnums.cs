@@ -41,10 +41,11 @@
         Slytherin
     }
 
-    public enum AcceptedPersonRole
+    public enum PersonRole
     {
         Teacher,
-        Student
+        Student,
+        Dumbledore
     }
 
     public enum HumanGender
@@ -55,11 +56,18 @@
 
     public enum LessonName
     {
-        Herbology ,Chemistry
+        Herbology,
+        Chemistry
     }
 
     public enum SportType
     {
-        
+    }
+
+    public enum LetterSubject
+    {
+        StudentReturnHome,
+        Invitation,
+        Message
     }
 }

@@ -51,6 +51,6 @@ namespace Hogwarts
         [JsonProperty("father")] public string Father { get; }
         [JsonProperty("username")] public string Username { get; set; }
         [JsonProperty("password")] public string Password { get; set; }
-        [JsonProperty("role")] public AcceptedPersonRole Role { get;}
+        [JsonProperty("role")] public PersonRole Role { get;}
     }
 }

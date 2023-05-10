@@ -65,6 +65,7 @@
         <Compile Include="Human.cs" />
         <Compile Include="Lesson.cs" />
         <Compile Include="Herbology.cs" />
+        <Compile Include="Letter.cs" />
         <Compile Include="Magic.cs" />
         <Compile Include="Plant.cs" />
         <Compile Include="Potion.cs" />

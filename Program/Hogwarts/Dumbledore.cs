@@ -10,9 +10,9 @@ namespace Hogwarts
         public static List<Dormitory> Dormitories = new List<Dormitory>();
 
         //------------------------------------------------------------------------------------------------
-        
+
         // Admin panel functions -->
-            private static bool IsAcceptedToHogwarts(Human person)
+        private static bool IsAcceptedToHogwarts(Human person)
         {
             return person.Breed == HumanBreed.HalfBlood || person.Breed == HumanBreed.PureBlood;
         }
@@ -24,9 +24,8 @@ namespace Hogwarts
             List<Human> validPersons;
             using (StreamReader reader = new StreamReader("../../../../Files/JSON_DATA.json"))
             {
-                List<Human> humans;
                 string humansFileString = reader.ReadToEnd();
-                humans = JsonConvert.DeserializeObject<List<Human>>(humansFileString);
+                List<Human> humans = JsonConvert.DeserializeObject<List<Human>>(humansFileString);
                 validPersons = humans.FindAll(IsAcceptedToHogwarts);
                 regularHumans.AddRange(humans.FindAll(IsRegularPerson));
             }
@@ -35,10 +34,10 @@ namespace Hogwarts
             {
                 switch (person.Role)
                 {
-                    case AcceptedPersonRole.Student:
+                    case PersonRole.Student:
                         validStudents.Add(new Student(person));
                         break;
-                    case AcceptedPersonRole.Teacher:
+                    case PersonRole.Teacher:
                         validTeachers.Add(new Teacher(person));
                         break;
                     default: break;
@@ -58,12 +57,6 @@ namespace Hogwarts
            
            */
 
-
-        public void SendMessageToStudents(string message, List<Student> students)
-        {
-            foreach (var student in students)
-                student.Mails.Add(message);
-        }
         // TrainTicket Generator -->
 
         public static void GenerateStudentTicket(Student student, List<TrainTicket> ticketList)

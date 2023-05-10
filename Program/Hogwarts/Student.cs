@@ -51,12 +51,7 @@ namespace Hogwarts
             return LessonConflicts;
         }
         //----------------------------------------------------------------------------------------------
-
-        public void SendMessageToDumbledore(string message, Dumbledore dumbledore)
-        {
-            dumbledore.Mails.Add(message);
-        }
-
+        
         //Generate random group if current term is one and if it's not, it'll just do nothing!
         public void GenerateGroup(List<Group> groups)
         {
