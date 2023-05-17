@@ -21,7 +21,7 @@ namespace Hogwarts
         //------------------------------------------------------------------------------------------------
         public List<ConflictLesson> TimeTableConflicts(List<Lesson> lessons)
         {
-            List<ConflictLesson> LessonConflicts = new List<ConflictLesson>();
+            List<ConflictLesson> lessonConflicts = new List<ConflictLesson>();
 
             //---------------------------------------------------------------------------------------------
             //----Here program will Check the reason of the conflicts foreach lesson(if has any conflicts),|
@@ -32,26 +32,41 @@ namespace Hogwarts
             for (int i = 0; i < lessons.Count; i++)
             {
                 if (lessons[i].Capacity == lessons[i].StudentCount)
-                    LessonConflicts.Add(new ConflictLesson(lessons[i].Name, lessons[i].StartTime, lessons[i].EndTime,
-                        lessons[i].StudentCount, lessons[i].Capacity, lessons[i].PresentationTerm,
-                        $"{lessons[i].Name} Is Full!"));
+                    lessonConflicts.Add(new ConflictLesson(lessons[i], $"{lessons[i].Name} Is Full!"));
 
 
                 for (int j = 0; j < lessons.Count; j++)
                 {
                     if (lessons[i].StartTime == lessons[j].StartTime && i != j)
-                        LessonConflicts.Add(new ConflictLesson(lessons[j].Name, lessons[j].StartTime,
-                            lessons[j].EndTime, lessons[j].StudentCount, lessons[j].Capacity,
-                            lessons[i].PresentationTerm,
+                        lessonConflicts.Add(new ConflictLesson(lessons[j],
                             $"{lessons[i].Name} Section Has Conflict With {lessons[j].Name}!"));
                 }
             }
 
 
-            return LessonConflicts;
+            return lessonConflicts;
+        }
+
+        public List<ConflictLesson> PassedLessonsConflicts(List<Lesson> chosenLessons)
+        {
+            List<ConflictLesson> conflictPassedLessons = new List<ConflictLesson>();
+            foreach (var chosenLesson in chosenLessons)
+            {
+                foreach (var passedLesson in PassedLessons)
+                {
+                    if (chosenLesson.Name == passedLesson)
+                    {
+                        conflictPassedLessons.Add(new ConflictLesson(chosenLesson,
+                            "This Lesson have already passed!"));
+                        break;
+                    }
+                }
+            }
+
+            return conflictPassedLessons;
         }
         //----------------------------------------------------------------------------------------------
-        
+
         //Generate random group if current term is one and if it's not, it'll just do nothing!
         public void GenerateGroup(List<Group> groups)
         {
@@ -72,10 +87,10 @@ namespace Hogwarts
                 {
                     Random randGenerator = new Random();
                     int randLessonIndex;
-                    bool isRepetitious = false;
-
+                    bool isRepetitious;
                     do
                     {
+                        isRepetitious = false;
                         randLessonIndex = randGenerator.Next(0, lessons.Count);
                         foreach (var lesson in CurrentTermLessons)
                         {
@@ -93,7 +108,7 @@ namespace Hogwarts
 
         private void ChooseLessons(List<Lesson> chosenLessons)
         {
-            if (TimeTableConflicts(chosenLessons).Count == 0)
+            if (TimeTableConflicts(chosenLessons).Count == 0 && PassedLessonsConflicts(chosenLessons).Count == 0)
                 CurrentTermLessons.AddRange(chosenLessons);
             else
             {
@@ -103,10 +118,16 @@ namespace Hogwarts
                 ----Some Events that comes from UI----
                 
                 */
-                
+
                 //After all when user clicked OK-->
                 //ChooseLessons(new lessons that come from UI);
             }
+        }
+
+        //Process that if the student can pass this lesson or not.(by Immorality of it's teacher and he/she's score) -->
+        public bool CanPassLesson(Lesson lesson, double examScore)
+        {
+            return ((examScore - (new Random().Next(0, 2) * (lesson.Teacher.ImmoralityPercent * examScore)) >= 50));
         }
 
         //------------------------------------------------------------------------------------------------

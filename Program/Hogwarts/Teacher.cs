@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Hogwarts
 {
@@ -12,8 +13,6 @@ namespace Hogwarts
             {
                 property.SetValue(this, property.GetValue(human));
             }
-
-
         }
 
 
@@ -24,7 +23,7 @@ namespace Hogwarts
 
         public List<ConflictLesson> TimeTableConflicts(List<Lesson> lessons)
         {
-            List<ConflictLesson> LessonConflicts = new List<ConflictLesson>();
+            List<ConflictLesson> lessonConflicts = new List<ConflictLesson>();
 
             //---------------------------------------------------------------------------------------------
             //----Here program will Check the reason of the conflicts foreach lesson(if has any conflicts),|
@@ -37,19 +36,42 @@ namespace Hogwarts
                 for (int j = 0; j < lessons.Count; j++)
                 {
                     if (lessons[i].StartTime == lessons[j].StartTime && i != j)
-                        LessonConflicts.Add(new ConflictLesson(lessons[j].Name, lessons[j].StartTime,
-                            lessons[j].EndTime, lessons[j].StudentCount, lessons[j].Capacity,
-                            lessons[i].PresentationTerm,
+                        lessonConflicts.Add(new ConflictLesson(lessons[j],
                             $"{lessons[i].Name} Section Has Conflict With {lessons[j].Name}!"));
                 }
             }
 
             //----------------------------------------------------------------------------------------------
 
-            return LessonConflicts;
+            return lessonConflicts;
+        }
+
+        public void GetLessonsForTeach(List<Lesson> chosenLessons)
+        {
+            if (TimeTableConflicts(chosenLessons).Count == 0)
+            {
+                CurrentTermForTeachLessons.AddRange(chosenLessons);
+            }
+            else
+            {
+                /*
+    
+                Here we can show conflict lessons to user
+                ----Some Events that comes from UI----
+   
+                */
+
+                //After all when user clicked OK-->
+                //GetLessonsForTeach(new lessons that come from UI);   
+            }
         }
 
         //------------------------------------------------------------------------------------------------
         public bool TeachMultipleLessons { get; set; }
+        public List<Lesson> CurrentTermForTeachLessons { get; set; }
+
+        //Randomly gives teacher an specific Immorality.
+        
+        public readonly double ImmoralityPercent = new Random().Next(5, 61);
     }
 }

@@ -7,12 +7,12 @@ namespace Hogwarts
     {
         public TrainTicket(int[] code)
         {
-            TicketCode = code;
             Day = code[0];
             StartTimeHour = code[1];
             StartTimeMinute = code[2];
             CabinCode = code[3];
             SeatCode = code[4];
+            TicketCode = code;
         }
 
         //----------------------------------------------------------------

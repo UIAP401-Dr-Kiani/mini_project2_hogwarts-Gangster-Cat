@@ -2,15 +2,15 @@
 {
     public class ConflictLesson : Lesson
     {
-        public ConflictLesson(LessonName name, int[] startTime,int[] endTime,int studentCount,int capacity, int presentationTerm,string msg)
+        public ConflictLesson(Lesson lesson,string conflictMsg)
         {
-            Name = name;
-            StartTime = startTime;
-            EndTime = endTime;
-            StudentCount = studentCount;
-            Capacity = capacity;
-            PresentationTerm = presentationTerm;
-            Msg = msg;
+            Name = lesson.Name;
+            StartTime = lesson.StartTime;
+            EndTime = lesson.EndTime;
+            StudentCount = lesson.StudentCount;
+            Capacity = lesson.Capacity;
+            PresentationTerm = lesson.PresentationTerm;
+            Msg = conflictMsg;
         }
         string Msg { get; set; }
     }
