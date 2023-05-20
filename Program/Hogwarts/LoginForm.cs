@@ -11,21 +11,11 @@ using System.Windows.Forms;
 
 namespace Hogwarts
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
         }
 
         private void timer1_Elapsed(object sender, ElapsedEventArgs e)
@@ -35,6 +25,11 @@ namespace Hogwarts
             else
                 IntroTimer.Stop();
                    
+        }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -7,17 +7,17 @@ namespace Hogwarts
 {
     public class Dumbledore : AllowedPerson
     {
-        public static List<Dormitory> Dormitories = new List<Dormitory>();
+        public List<Dormitory> Dormitories = new List<Dormitory>();
 
         //------------------------------------------------------------------------------------------------
 
         // Admin panel functions -->
-        private static bool IsAcceptedToHogwarts(Human person)
+        private bool IsAcceptedToHogwarts(Human person)
         {
             return person.Breed == HumanBreed.HalfBlood || person.Breed == HumanBreed.PureBlood;
         }
 
-        private static bool IsRegularPerson(Human person) => !IsAcceptedToHogwarts(person);
+        private bool IsRegularPerson(Human person) => !IsAcceptedToHogwarts(person);
 
         public void ValidateHumans(List<Student> validStudents, List<Teacher> validTeachers, List<Human> regularHumans)
         {
@@ -59,7 +59,7 @@ namespace Hogwarts
 
         // TrainTicket Generator -->
 
-        public static void GenerateStudentTicket(Student student, List<TrainTicket> ticketList)
+        public void GenerateStudentTicket(Student student, List<TrainTicket> ticketList)
         {
             Random rnd = new Random();
             bool isRepetitious = false;
