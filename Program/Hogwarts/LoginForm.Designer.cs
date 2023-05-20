@@ -43,7 +43,6 @@
             // 
             // IntroTimer
             // 
-            this.IntroTimer.Enabled = false;
             this.IntroTimer.Interval = 10D;
             this.IntroTimer.SynchronizingObject = this;
             this.IntroTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
@@ -52,7 +51,7 @@
             // 
             this.LoadingFormPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoadingFormPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.LoadingFormPanel.BackColor = System.Drawing.Color.DarkGray;
+            this.LoadingFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.LoadingFormPanel.Controls.Add(this.LoginBtn);
             this.LoadingFormPanel.Controls.Add(this.PasswordTextBox);
             this.LoadingFormPanel.Controls.Add(this.PasswordLabel);
@@ -65,10 +64,10 @@
             // 
             // LoginBtn
             // 
-            this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.LoginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(64)))));
             this.LoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.LoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(166)))), ((int)(((byte)(37)))));
             this.LoginBtn.Location = new System.Drawing.Point(37, 245);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(258, 43);
@@ -100,6 +99,7 @@
             // 
             this.UserNameTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserNameTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.UserNameTextBox.Location = new System.Drawing.Point(37, 93);
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(259, 28);
@@ -147,16 +147,15 @@
 
         private System.Windows.Forms.Label PasswordLabel;
 
-        private System.Windows.Forms.TextBox UserNameTextBox;
-
         private System.Windows.Forms.TextBox PasswordTextBox;
-
-        private System.Windows.Forms.Label UserNameLabel;
 
         private System.Windows.Forms.Panel LoadingFormPanel;
 
         public System.Timers.Timer IntroTimer;
-         
+
         #endregion
+
+        public System.Windows.Forms.TextBox UserNameTextBox;
+        private System.Windows.Forms.Label UserNameLabel;
     }
 }

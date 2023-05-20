@@ -23,10 +23,14 @@ namespace Hogwarts
         {
             get
             {
-                if (Enum.TryParse(StringGender.Replace(" ", ""), true, out HumanGender _gender))
-                    return (HumanGender)Enum.Parse(typeof(HumanGender), StringGender.Replace(" ", ""), true);
-                else
-                    return null;
+                if (StringGender != null)
+                {
+                    if (Enum.TryParse(StringGender.Replace(" ", ""), true, out HumanGender _gender))
+                        return (HumanGender)Enum.Parse(typeof(HumanGender), StringGender.Replace(" ", ""), true);
+                    else
+                        return null;
+                }
+                else return null;
             }
         }
 
@@ -36,10 +40,14 @@ namespace Hogwarts
         {
             get
             {
-                if (Enum.TryParse(StringBreed.Replace(" ", ""), true, out HumanBreed _breed))
-                    return (HumanBreed)Enum.Parse(typeof(HumanBreed), StringBreed.Replace(" ", ""), true);
-                else
-                    return null;
+                if (StringBreed != null)
+                {
+                    if (Enum.TryParse(StringBreed.Replace(" ", ""), true, out HumanBreed _breed))
+                        return (HumanBreed)Enum.Parse(typeof(HumanBreed), StringBreed.Replace(" ", ""), true);
+                    else
+                        return null;
+                }
+                else return null;
             }
         }
 
@@ -51,6 +59,6 @@ namespace Hogwarts
         [JsonProperty("father")] public string Father { get; }
         [JsonProperty("username")] public string Username { get; set; }
         [JsonProperty("password")] public string Password { get; set; }
-        [JsonProperty("role")] public PersonRole Role { get;}
+        [JsonProperty("role")] public PersonRole Role { get; }
     }
 }

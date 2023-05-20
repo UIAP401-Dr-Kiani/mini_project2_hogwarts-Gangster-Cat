@@ -28,7 +28,7 @@ namespace Hogwarts
             else
             {
                 WhoLabel.Text = "Choose one first!";
-                WhoLabel.ForeColor = Color.Red;
+                WhoLabel.ForeColor = System.Drawing.Color.FromArgb(211, 166, 37);
                 return 0;
             }
         }
@@ -41,6 +41,6 @@ namespace Hogwarts
             }
         }
         //Properties
-        public PersonRole EnteredRole { get; set; }
+        public PersonRole? EnteredRole { get; set; }
     }
 }
