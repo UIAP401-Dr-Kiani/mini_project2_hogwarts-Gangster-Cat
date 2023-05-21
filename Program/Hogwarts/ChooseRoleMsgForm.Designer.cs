@@ -34,6 +34,7 @@
             this.StudentRadio = new System.Windows.Forms.RadioButton();
             this.TeacherRadio = new System.Windows.Forms.RadioButton();
             this.DumbledoreRadio = new System.Windows.Forms.RadioButton();
+            this.closeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // OkRoleButton
@@ -98,12 +99,26 @@
             this.DumbledoreRadio.Text = "Dumbledore";
             this.DumbledoreRadio.UseVisualStyleBackColor = true;
             // 
+            // closeLabel
+            // 
+            this.closeLabel.AutoSize = true;
+            this.closeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeLabel.Font = new System.Drawing.Font("Magneto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
+            this.closeLabel.Location = new System.Drawing.Point(12, 13);
+            this.closeLabel.Name = "label1";
+            this.closeLabel.Size = new System.Drawing.Size(22, 19);
+            this.closeLabel.TabIndex = 5;
+            this.closeLabel.Text = "X";
+            this.closeLabel.Click += new System.EventHandler(this.closeLabel_Click);
+            // 
             // ChooseRoleMsgForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(320, 160);
+            this.Controls.Add(this.closeLabel);
             this.Controls.Add(this.DumbledoreRadio);
             this.Controls.Add(this.TeacherRadio);
             this.Controls.Add(this.StudentRadio);
@@ -124,5 +139,6 @@
         private System.Windows.Forms.RadioButton TeacherRadio;
         private System.Windows.Forms.RadioButton DumbledoreRadio;
         public System.Windows.Forms.Button OkRoleButton;
+        private System.Windows.Forms.Label closeLabel;
     }
 }

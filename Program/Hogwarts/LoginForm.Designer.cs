@@ -29,14 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.IntroTimer = new System.Timers.Timer();
             this.LoadingFormPanel = new System.Windows.Forms.Panel();
+            this.NotFoundLabel = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
             this.UserNameLabel = new System.Windows.Forms.Label();
+            this.ESCNotify = new System.Windows.Forms.Label();
+            this.ESCNotifyTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.IntroTimer)).BeginInit();
             this.LoadingFormPanel.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +56,7 @@
             this.LoadingFormPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoadingFormPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.LoadingFormPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.LoadingFormPanel.Controls.Add(this.NotFoundLabel);
             this.LoadingFormPanel.Controls.Add(this.LoginBtn);
             this.LoadingFormPanel.Controls.Add(this.PasswordTextBox);
             this.LoadingFormPanel.Controls.Add(this.PasswordLabel);
@@ -61,6 +66,14 @@
             this.LoadingFormPanel.Name = "LoadingFormPanel";
             this.LoadingFormPanel.Size = new System.Drawing.Size(332, 362);
             this.LoadingFormPanel.TabIndex = 0;
+            // 
+            // NotFoundLabel
+            // 
+            this.NotFoundLabel.AutoSize = true;
+            this.NotFoundLabel.Location = new System.Drawing.Point(37, 210);
+            this.NotFoundLabel.Name = "NotFoundLabel";
+            this.NotFoundLabel.Size = new System.Drawing.Size(0, 20);
+            this.NotFoundLabel.TabIndex = 5;
             // 
             // LoginBtn
             // 
@@ -80,9 +93,10 @@
             // 
             this.PasswordTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordTextBox.Font = new System.Drawing.Font("Lucida Sans", 11.25F);
             this.PasswordTextBox.Location = new System.Drawing.Point(37, 166);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(259, 28);
+            this.PasswordTextBox.Size = new System.Drawing.Size(259, 25);
             this.PasswordTextBox.TabIndex = 3;
             // 
             // PasswordLabel
@@ -99,10 +113,11 @@
             // 
             this.UserNameTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UserNameTextBox.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.UserNameTextBox.Location = new System.Drawing.Point(37, 93);
             this.UserNameTextBox.Name = "UserNameTextBox";
-            this.UserNameTextBox.Size = new System.Drawing.Size(259, 28);
+            this.UserNameTextBox.Size = new System.Drawing.Size(259, 25);
             this.UserNameTextBox.TabIndex = 1;
             // 
             // UserNameLabel
@@ -115,6 +130,23 @@
             this.UserNameLabel.TabIndex = 0;
             this.UserNameLabel.Text = "UserName";
             // 
+            // ESCNotify
+            // 
+            this.ESCNotify.AutoSize = true;
+            this.ESCNotify.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ESCNotify.Font = new System.Drawing.Font("Lucida Sans", 11.25F);
+            this.ESCNotify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ESCNotify.Location = new System.Drawing.Point(11, 11);
+            this.ESCNotify.Name = "ESCNotify";
+            this.ESCNotify.Size = new System.Drawing.Size(129, 17);
+            this.ESCNotify.TabIndex = 1;
+            this.ESCNotify.Text = "Press ESC to Exit";
+            // 
+            // ESCNotifyTimer
+            // 
+            this.ESCNotifyTimer.Interval = 2;
+            this.ESCNotifyTimer.Tick += new System.EventHandler(this.ESCNotifyTimer_Tick);
+            // 
             // LoginForm
             // 
             this.AccessibleName = "Hogwarts";
@@ -123,6 +155,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(990, 567);
             this.ControlBox = false;
+            this.Controls.Add(this.ESCNotify);
             this.Controls.Add(this.LoadingFormPanel);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Harlow Solid Italic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,10 +169,12 @@
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Transparent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LoginForm_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.IntroTimer)).EndInit();
             this.LoadingFormPanel.ResumeLayout(false);
             this.LoadingFormPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -157,5 +192,8 @@
 
         public System.Windows.Forms.TextBox UserNameTextBox;
         private System.Windows.Forms.Label UserNameLabel;
+        private System.Windows.Forms.Label NotFoundLabel;
+        private System.Windows.Forms.Label ESCNotify;
+        private System.Windows.Forms.Timer ESCNotifyTimer;
     }
 }

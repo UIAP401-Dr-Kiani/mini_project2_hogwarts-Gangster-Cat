@@ -40,7 +40,12 @@ namespace Hogwarts
                 this.Close();
             }
         }
+        private void closeLabel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         //Properties
         public PersonRole? EnteredRole { get; set; }
+
     }
 }

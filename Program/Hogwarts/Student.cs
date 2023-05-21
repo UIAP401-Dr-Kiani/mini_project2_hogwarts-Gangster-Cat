@@ -9,10 +9,15 @@ namespace Hogwarts
         {
             // This constructor is for when we want to make instances of Student class with including properties of another human class instance -->
 
-            foreach (var property in typeof(Human).GetFields())
-            {
-                property.SetValue(this, property.GetValue(human));
-            }
+            this.Gender = human.Gender;
+            this.Breed = human.Breed;
+            this.Name = human.Name;
+            this.LastName = human.LastName;
+            this.BirthDate = human.BirthDate;
+            this.Father = human.Father;
+            this.Username = human.Username;
+            this.Password = human.Password;
+            this.Role = human.Role;
         }
 
         //------------------------------------------------------------------------------------------------

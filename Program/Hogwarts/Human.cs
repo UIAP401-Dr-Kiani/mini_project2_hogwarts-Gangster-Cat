@@ -17,37 +17,56 @@ namespace Hogwarts
         //|--------------------------------------------------------------------------|
 
         //---------------------------------------------------------------->>>>
-        [JsonProperty("gender")] public string StringGender { get; }
-
+        [JsonProperty("gender")] public string StringGender { get; set; }
+        private HumanGender? _HumanGender { get; set; }
         public HumanGender? Gender
         {
             get
             {
-                if (StringGender != null)
+                if (_HumanGender != null)
+                    return _HumanGender;
+                else if (StringGender != null || StringGender != "")
                 {
                     if (Enum.TryParse(StringGender.Replace(" ", ""), true, out HumanGender _gender))
-                        return (HumanGender)Enum.Parse(typeof(HumanGender), StringGender.Replace(" ", ""), true);
+                        _HumanGender = (HumanGender)Enum.Parse(typeof(HumanGender), StringGender.Replace(" ", ""), true);
                     else
                         return null;
+
+                    return _HumanGender;
                 }
-                else return null;
+                else
+                    return null;
+            }
+            set
+            {
+                _HumanGender = value;
             }
         }
 
-        [JsonProperty("type")] public string StringBreed { get; }
+        [JsonProperty("type")] public string StringBreed { get; set; }
+        private HumanBreed? _HumanBreed { get; set; }
 
         public HumanBreed? Breed
         {
             get
             {
-                if (StringBreed != null)
+                if (_HumanBreed != null)
+                    return _HumanBreed;
+                else if (StringBreed != null || StringBreed != "")
                 {
                     if (Enum.TryParse(StringBreed.Replace(" ", ""), true, out HumanBreed _breed))
-                        return (HumanBreed)Enum.Parse(typeof(HumanBreed), StringBreed.Replace(" ", ""), true);
+                        _HumanBreed = (HumanBreed)Enum.Parse(typeof(HumanBreed), StringBreed.Replace(" ", ""), true);
                     else
                         return null;
+
+                    return _HumanBreed;
                 }
-                else return null;
+                else
+                    return null;
+            }
+            set
+            {
+                _HumanBreed = value;
             }
         }
 
@@ -56,9 +75,9 @@ namespace Hogwarts
         [JsonProperty("dateOfBirth")] public string BirthDate { get; set; }
 
 
-        [JsonProperty("father")] public string Father { get; }
+        [JsonProperty("father")] public string Father { get; set; }
         [JsonProperty("username")] public string Username { get; set; }
         [JsonProperty("password")] public string Password { get; set; }
-        [JsonProperty("role")] public PersonRole Role { get; }
+        [JsonProperty("role")] public PersonRole Role { get; set; }
     }
 }

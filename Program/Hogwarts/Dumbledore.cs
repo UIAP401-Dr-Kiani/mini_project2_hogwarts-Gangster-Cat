@@ -32,16 +32,10 @@ namespace Hogwarts
 
             foreach (var person in validPersons)
             {
-                switch (person.Role)
-                {
-                    case PersonRole.Student:
-                        validStudents.Add(new Student(person));
-                        break;
-                    case PersonRole.Teacher:
-                        validTeachers.Add(new Teacher(person));
-                        break;
-                    default: break;
-                }
+                if (person.Role == PersonRole.Student)
+                    validStudents.Add(new Student(person));
+                else if (person.Role == PersonRole.Teacher)
+                    validTeachers.Add(new Teacher(person));
             }
         }
 
